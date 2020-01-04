@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Options } from 'ng5-slider';
 
 @Component({
   selector: 'app-technical',
@@ -18,5 +19,17 @@ details : any;
     {'no':5,'name':'OS','value':'Windows, Ubuntu 16.04'},
     {'no':6,'name':'Misc','value':'Maven, Putty, JIRA, Bugzilla'}]
   }
+  value: number = 6;
+  options: Options = {
+    showTicksValues: true,
+    stepsArray: [
+      {value: 2, legend: 'Beginner'},
+      {value: 4, legend: 'Fair'},
+      {value: 6, legend: 'Average'},
+      {value: 8, legend: 'Good'},
+      {value: 10, legend: 'Excellent'}
+    ]
+  };
+
 
 }

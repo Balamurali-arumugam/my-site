@@ -1,10 +1,31 @@
-<div class="mt-3"></div>
-<div class="container-fluid">
-    <div class="row">
+<div class="container-fluid" >
+    <div class="row" *ngIf="currentWindowWidth >= 992">
         <div class="col-md-6 pull-left">
             <img class="img-responsive img-rad" src="assets/images/me1.jpg" alt="logo" />
         </div>
         <div class="col-md-6">
+            <p> <strong>Hi! I am Balamurali.</strong>
+                <br></p>
+            <p class="text-grey">
+                Aiming to utilize my programming knowledge and analytical skills to build a stable, reliable
+                and maintainable software.
+                <br> <br>3+ years of experiences in software development, currently working in Chennai, TamilNadu.
+                <br> <br>Experienced in Web development skills like Spring, Spring Boot, Rest WS.
+                <br> <br>Worked in Agile software development.
+                <br> <br>Capable of working in a fast paced, dynamic, team-oriented environment.
+            </p>
+            <p class="text-grey"> <strong>Mail Id: </strong> abc@gmail.com
+                <br></p>
+                <p class="text-grey"> <strong>Mobile No: </strong> (+91) hello
+                    <br></p>    
+        </div>
+    </div>
+
+    <div class="row" *ngIf="currentWindowWidth < 992">
+        <div class="col-sm-12 pull-left">
+            <img class="img-responsive img-rad" src="assets/images/me1.jpg" alt="logo" />
+        </div>
+        <div class="col-sm-12">
             <p> <strong>Hi! I am Balamurali.</strong>
                 <br></p>
             <p class="text-grey">

@@ -10,7 +10,8 @@ import { TechnicalComponent } from './technical/technical.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { EducationComponent } from './education/education.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { Ng5SliderModule } from 'ng5-slider';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,10 @@ import { ContactComponent } from './contact/contact.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule  ],
+    FormsModule,
+    AngularFontAwesomeModule,
+    Ng5SliderModule 
+   ],
   providers: [],
   bootstrap: [AppComponent]
 })
