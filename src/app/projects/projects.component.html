@@ -1,1 +1,104 @@
-<p>projects works!</p>
+
+<div class="container-fluid">
+<div class="row">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Organization</th>
+      <th scope="col">Role</th>
+      <th scope="col">Duration</th>
+      <th scope="col">Domain</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let detail of details">
+      <th scope="row">{{ detail.org }}</th>
+      <td>{{ detail.role }}</td>
+      <td>{{ detail.duration }}</td>
+      <td>{{ detail.domain }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+  <div class="row">
+    <div class="mt-3 mb-3 col-md-3">
+      <div class="card">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-md-12">
+              Project: CSO
+            </div>
+            <div class="col-md-12">
+              Company: Excelacom
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+
+        </div>
+        <div class="card-footer">
+          Duration: Jun 2016 - May 2017
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+<div class="col-md-3">
+  <div class="card">
+    <div class="card-header">
+      <div class="row">
+        <div class="col-md-12">
+          Project: Galaxy
+        </div>
+        <div class="col-md-12">
+          Company: Excelacom
+        </div>
+      </div>        </div>
+    <div class="card-body">
+    </div>
+    <div class="card-footer">
+      Duration: Jun 2017 - Nov 2017
+    </div>
+  </div>
+</div>
+<div class="col-md-3">
+  <div class="card">
+    <div class="card-header">
+      <div class="row">
+        <div class="col-md-12">
+          Project: Credit Policy
+        </div>
+        <div class="col-md-12">
+          Company: Bankbazaar.com
+        </div>
+      </div>        </div>
+    <div class="card-body">
+    </div>
+    <div class="card-footer">
+      Duration: Nov 2017 - Sept 2019
+    </div>
+  </div>
+</div>
+<div class="col-md-3">
+  <div class="card">
+    <div class="card-header">
+      <div class="row">
+        <div class="col-md-12">
+          Project: Skill Management
+        </div>
+        <div class="col-md-12">
+          Company: -
+        </div>
+      </div>        </div>
+    <div class="card-body">
+    </div>
+    <div class="card-footer">
+      Duration: Sept 2019 - Till date
+    </div>
+  </div>
+</div>
+</div>
+-->
