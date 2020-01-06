@@ -1,48 +1,48 @@
 <div class="container-fluid">
-    <div class="mb-2 mt-2">
-        <h6 style="text-decoration: underline; font-size: larger;">
-             Achievements and Certifications: 
-            </h6>
-    </div>   
-    <div class="row">        
-        <ol>
-            <li>
-                <p><strong>`On-Spot Award'</strong> from Bankbazaar.com for the month of Jan 2019 and May 2019</p>
-            </li>
-            <li>
-                <p><strong>`Student Placement Co-Ordinator'</strong> for IT Department 2015-2016</p>
-            </li>
-            <li>
-                <p><strong>`Technical Event Co-Ordinator'</strong> for IT Symposium held in Velammal Engineering College
-                    2015-2016</p>
-            </li>
-            <li>
-                <p><strong>`Won 2nd Place'</strong> in technical symposium held in Velammal Institute of Technolody</p>
-            </li>
-            <li>
-                <p>Completed <strong>`English Impact - Upper Intermediate'</strong> course offered by British
-                    Council,Chennai</p>
-            </li>
-        </ol>
-    </div>
-    <div class="row">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">Course</th>
-                    <th scope="col">Institution</th>
-                    <th scope="col">Year of Passing</th>
-                    <th scope="col">% of Marks</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let detail of details">
-                    <td>{{ detail.course }}</td>
-                    <td>{{ detail.institution }}</td>
-                    <td>{{ detail.year }}</td>
-                    <td>{{ detail.mark }}</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+  <div class="mb-2 mt-2">
+    <h6 style="text-decoration: underline; font-size: larger;">
+      Achievements and Certifications:
+    </h6>
+  </div>
+  <div class="row">
+    <ol>
+      <li>
+        <p>Completed <strong>`English Impact - Upper Intermediate'</strong> course offered by British
+          Council,Chennai</p>
+      </li>
+      <li>
+        <p><strong>`On-Spot Award'</strong> from Bankbazaar.com for the month of Jan 2019 and May 2019</p>
+      </li>
+      <li>
+        <p><strong>`Student Placement Co-Ordinator'</strong> for IT Department 2015-2016</p>
+      </li>
+      <li>
+        <p><strong>`Technical Event Co-Ordinator'</strong> for IT Symposium held in Velammal Engineering College
+          2015-2016</p>
+      </li>
+      <li>
+        <p><strong>`Won 2nd Place'</strong> in technical symposium held in Velammal Institute of Technolody</p>
+      </li>
+    </ol>
+  </div>
+  <div class="row">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th scope="col">Course</th>
+        <th scope="col">Institution</th>
+        <th scope="col">Year of Passing</th>
+        <th scope="col">% of Marks</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let detail of details">
+        <td>{{ detail.course }}</td>
+        <td>{{ detail.institution }}</td>
+        <td>{{ detail.year }}</td>
+        <td>{{ detail.mark }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
